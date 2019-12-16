@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/Circe/stylesheet.css">
+</head>
+<body>
+	<section>
+		<table>
+		  <tr>
+		    <td>Type of Customer</td>
+		    <td>
+					<select id="toc">
+					  <option>I am moving house</option>
+					  <option>I am first time buyer</option>
+					  <option>I am remortgaging</option>
+					</select>
+				</td>
+		  </tr>
+		  <tr>
+		    <td>Repayment Type</td>
+		    <td>
+					<select id="rtype">
+					  <option>Repayment</option>
+					  <option>Interest Only</option>
+					</select>
+				</td>
+		  </tr>
+		  <tr>
+		    <td>Property Value</td>
+		    <td><input type="number" id="pvalue"></td>
+		  </tr>
+		  <tr>
+		    <td>Deposit Amount</td>
+		    <td><input type="number" id="damount"></td>
+		  </tr>
+		  <tr>
+		    <td class="error hidden" id="damounterror">The "Deposit Amount" cannot be more than the "Property Value"</td>
+		  </tr>
+		  <tr>
+		    <td>Net Property Value</td>
+		    <td id="npv">?</td>
+		  </tr>
+		  <tr>
+		    <td>Mortgage Term (Years)</td>
+		    <td><input type="number" id="mtermy"></td>
+		  </tr>
+		  <tr>
+		    <td>Mortgage Term (Months)</td>
+		    <td id="mtermm">?</td>
+		  </tr>
+		  <tr>
+		    <td>Compounding Period Per Year</td>
+		    <td id="cppy">12</td>
+		  </tr>
+		  <tr>
+		    <td>Initial Interest Rate (%)</td>
+		    <td><input type="number" step="0.1" id="iirate"></td>
+		  </tr>
+		  <tr>
+		    <td></td>
+		  </tr>
+		  <tr>
+		    <td>Monthly Mortgage Payment</td>
+		    <td id="mmp">?</td>
+		  </tr>
+		  <tr>
+		    <td>Total Mortgage Cost (with interest)</td>
+		    <td id="tmc">?</td>
+		  </tr>
+		  <tr>
+		    <td>Loan to Value (LTV)</td>
+		    <td id="ltv">?</td>
+		  </tr>
+		  <tr>
+		    <td>Total Mortgage Cost (in Interest Only Case)</td>
+		    <td id="tmc2">?</td>
+		  </tr>
+		</table>
+		<button onclick="check()">Check</button>
+	</section>
+		<script src="js/ipmtandpmt.js"></script>
+		<script src="js/main.js"></script>
+</body>
+</html>
