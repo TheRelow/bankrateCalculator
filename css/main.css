@@ -33,3 +33,9 @@ section {
     color: red; }
   section .hidden {
     display: none; }
+
+@media (min-width: 1020px) {
+section {
+  position: static;
+  transform: translate(0, 0);
+}
